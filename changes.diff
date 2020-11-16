@@ -1,0 +1,39 @@
+diff --cc calculator.c
+index eaa70f5,9708479..0000000
+--- a/calculator.c
++++ b/calculator.c
+@@@ -15,20 -15,20 +15,32 @@@ int main()
+  	printf("\nEnter two numbers: ");
+  	scanf("%f",&num1);
+  	scanf("%f",&num2);
+- 	
++ 
+  	switch(op){
+- 		case '+' : 
++ 		case '+' :
+  			ans = num1 + num2;
+  			break;
+++<<<<<<< HEAD
+ +		case '-' : 
+ +			ans = num1 - num2;
+ +			break;
+ +		case '*' : 
+ +			ans = num1 * num2;
+ +			break;
+ +		case '/' : 
+ +			ans = num1 / num2;
+ +			break;
+++=======
++         case '-' :
++             ans = num1 - num2;
++             break;
++         case '*' :
++             ans = num1 * num2;
++             break;
++         case '/' :
++             ans = num1 / num2;
++             break;
+++>>>>>>> main
+  		default:
+  			printf("Enter a correct operator!");
+  			return 1;
